@@ -1,0 +1,40 @@
+@import "sprite";
+
+[class^='icon-'], [class*=' icon-'] {
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../img/sprite.png') -9999px -9999px no-repeat;
+}
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  [class^='icon-'], [class*=' icon-'] {
+    background-image: url('../../img/sprite@2x.png');
+    @include sprite-background-size($func1);
+  }
+}
+
+@mixin set-sprite($sprite) {
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+.icon-func1 {
+  @include set-sprite($func1);
+}
+.icon-func2 {
+  @include set-sprite($func2);
+}
+.icon-func3 {
+  @include set-sprite($func3);
+}
+.icon-func4 {
+  @include set-sprite($func4);
+}
+.icon-func5 {
+  @include set-sprite($func5);
+}
+.icon-func6 {
+  @include set-sprite($func6);
+}
+
+

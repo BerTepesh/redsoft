@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta content='true' name='HandheldFriendly' />
+  <meta content='width' name='MobileOptimized' />
+  <meta content='yes' name='apple-mobile-web-app-capable' />
+  <title>RedSoft</title>
+  <link href="slick/slick.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <header class="header">
+        <a href="/" class="header__logo"><img src="img/logo.png" alt=""></a>
+        <div class="header__control">
+          <ul class="main-menu">
+            <li><a href="##">О сервисе</a></li>
+            <li><a href="##">Функции</a></li>
+            <li><a href="##">Возможности</a></li>
+            <li><a href="##">Партнеры</a></li>
+          </ul>
+          <a href="##" class="btn btn-light">Оставить заявку</a>
+        </div>
+      </header>
+    </div>
+    <main role="main" class="content">
+      <div class="preface">
+        <div class="preface__wrap">
+          <div class="preface__holder" style="background-image: url(img/preface/1.jpg)">
+            <ul class="preface__circles">
+              <li></li><li></li><li></li>
+            </ul>
+            <div class="preface__content">
+              <h1 class="preface__title">Расширяем возможности предоставления
+                качественных медицинских услуг</h1>
+              <div class="preface__text">
+                «Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».
+              </div>
+              <a href="##" class="btn">Узнать больше</a>
+            </div>
+          </div>
+          <div class="preface__holder" style="background-image: url(img/preface/2.jpg)">
+            <ul class="preface__circles">
+              <li></li><li></li><li></li>
+            </ul>
+            <div class="preface__content">
+              <h1 class="preface__title">Следить за здоровьем станет проще</h1>
+              <div class="preface__text">
+                Скоро вы сможете находиться на связи со своим лечащим врачом независимо от своего местоположения, вести дневник мониторинга самочувствия, получать рекомендации по плану лечения и многое другое.
+              </div>
+              <a href="##" class="btn">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diary">
+        <ul class="diary__circles">
+          <li></li><li></li><li></li>
+        </ul>
+        <div class="diary__pulse"></div>
+        <div class="container">
+          <div class="diary__holder">
+            <div class="diary__img">
+              <img src="img/diary.png" alt="">
+            </div>
+            <div class="diary__content">
+              <h2 class="diary__title h1">Что такое «Дневник здоровья»?</h2>
+              <p class="diary__text">Дневник пациента — это удобный онлайн-сервис:</p>
+              <ul class="styled-list">
+                <li>Вносите результаты измерений вручную или с помощью
+                  интегрированных приборов</li>
+                <li>Ведите персональную медицинскую карту с историей
+                  ваших измерений</li>
+                <li>Делитесь результатами измерений со специалистами
+                  для повышения эффективности лечения</li>
+                <li>Получайте рекомендации, созданные специально для вас</li>
+              </ul>
+              <a href="##" class="btn">Оставить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="functions">
+        <div class="container">
+          <h2 class="functions__title h1">Функции приложения</h2>
+          <ul class="functions__list">
+            <li>
+              <div class="functions__ico">
+                <span class="icon-func1"></span>
+              </div>
+              <div class="functions__caption">Планирование графика
+                приема лекарств</div>
+            </li>
+            <li>
+              <div class="functions__ico">
+                <span class="icon-func2"></span>
+              </div>
+              <div class="functions__caption">Уведомление врача
+                об исполнении назначений</div>
+            </li>
+            <li>
+              <div class="functions__ico">
+                <span class="icon-func3"></span>
+              </div>
+              <div class="functions__caption">Ведение дневника
+                самочувствия</div>
+            </li>
+            <li>
+              <div class="functions__ico">
+                <span class="icon-func4"></span>
+              </div>
+              <div class="functions__caption">Удаленное предоставление
+                измерений врачу</div>
+            </li>
+            <li>
+              <div class="functions__ico">
+                <span class="icon-func5"></span>
+              </div>
+              <div class="functions__caption">Общение с врачами
+                через встроенный мессенджер</div>
+            </li>
+            <li>
+              <div class="functions__ico">
+                <span class="icon-func6"></span>
+              </div>
+              <div class="functions__caption">Получение уведомлений
+                для выполнения назначений</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="js/jquery-3.4.0.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(".preface__wrap").slick({
+      arrows: false,
+      dots: true,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      fade: true
+    });
+  </script>
+</body>
+</html>
